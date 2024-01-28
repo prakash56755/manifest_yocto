@@ -11,9 +11,9 @@
        "revision": commitish to checkout (if not the default)
        "path": directory where git repository gets cloned/synced -->
 
-  <project name="poky" revision="54af8c5e80ebf63707ef4e51cc9d374f716da603" remote="yocto" path="./" upstream="kirkstone" />
   <project name="meta-openembedded" revision="730e44900a0a86265bad93a16b5a5ff344a07266"  remote="oe" path="poky/" upstream="kirkstone" />
   <project name="meta-variscite-qemu" revision="16e8873ec046fca7a35d12fbfe8cc944942263ba" remote="prakash56755" path="poky/" />
+  <project name="poky" revision="54af8c5e80ebf63707ef4e51cc9d374f716da603" remote="yocto" path="./" upstream="kirkstone" />
   <project name="build-script" revision="refs/heads/master" remote="prakash56755" path="poky/" />
 
 </manifest>
