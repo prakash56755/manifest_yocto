@@ -1,5 +1,5 @@
-**Install Yocto development Environment
-**
+Install Yocto development Environment
+
 Use ubuntu 22.04 or ubuntu 20.04
 
 Install the necessary packages in ubuntu:
@@ -24,12 +24,12 @@ git clone https://github.com/prakash56755/docker_yocto.git
 
 cd docker_yocto
 
-**Docker build
-**
+Docker build
+
 docker build -t qemu_yocto --build-arg username=yocto .
 
-**Docker Run
-**
+Docker Run
+
 docker run -it --rm --name=yocto_container --ipc=host --user=$UID --volume $(pwd):/home/yocto -w /home/yocto qemu_yocto
 
 Fetch yocto source:
