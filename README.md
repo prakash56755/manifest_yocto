@@ -24,11 +24,11 @@ git clone https://github.com/prakash56755/docker_yocto.git
 
 cd docker_yocto
 
-Docker build
+Docker build:
 
 docker build -t qemu_yocto --build-arg username=yocto .
 
-Docker Run
+Docker Run:
 
 docker run -it --rm --name=yocto_container --ipc=host --user=$UID --volume $(pwd):/home/yocto -w /home/yocto qemu_yocto
 
