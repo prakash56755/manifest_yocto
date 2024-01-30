@@ -57,8 +57,11 @@ MACHINE ??= "variscite-qemuarm64"
 Then add the custom layer in bblayer.conf using the below command
 
  bitbake-layers add-layer ../meta-variscite-qemu/
+ 
  bitbake-layers add-layer ../meta-openembedded/meta-oe/
+ 
  bitbake-layers add-layer ../meta-openembedded/meta-python/
+ 
  bitbake-layers add-layer ../meta-openembedded/meta-networking/
 
 Now start the building the image using the below command.
