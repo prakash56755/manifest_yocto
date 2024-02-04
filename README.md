@@ -69,3 +69,6 @@ Now start the building the image using the below command.
 bitbake var-qemu-console-image
 
 
+To run variscite qemu:
+
+DEVICE_TREE=tmp/deploy/images/variscite-qemuarm64/var-qemu-arm64.dtb runqemu tmp/deploy/images/variscite-qemuarm64/ nographic
