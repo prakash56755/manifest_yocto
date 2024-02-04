@@ -18,20 +18,6 @@ Install repo:
 sudo curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > /usr/bin/repo
 sudo chmod a+x /usr/bin/repo
 
-if you want to use Dockerfile to compile yocto.
-
-git clone https://github.com/prakash56755/docker_yocto.git
-
-cd docker_yocto
-
-Docker build:
-
-docker build -t qemu_yocto --build-arg username=yocto .
-
-Docker Run:
-
-docker run -it --rm --name=yocto_container --ipc=host --user=$UID --volume $(pwd):/home/yocto -w /home/yocto qemu_yocto
-
 Fetch yocto source:
 
 mkdir -p /home/user/var-qemuarm64
@@ -72,3 +58,18 @@ bitbake var-qemu-console-image
 To run variscite qemu:
 
 DEVICE_TREE=tmp/deploy/images/variscite-qemuarm64/var-qemu-arm64.dtb runqemu tmp/deploy/images/variscite-qemuarm64/ nographic
+
+
+if you want to use Dockerfile to compile yocto.
+
+git clone https://github.com/prakash56755/docker_yocto.git
+
+cd docker_yocto
+
+Docker build:
+
+docker build -t qemu_yocto --build-arg username=yocto .
+
+Docker Run:
+
+docker run -it --rm --name=yocto_container --ipc=host --user=$UID --volume $(pwd):/home/yocto -w /home/yocto qemu_yocto
