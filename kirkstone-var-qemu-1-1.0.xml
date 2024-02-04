@@ -12,7 +12,7 @@
        "path": directory where git repository gets cloned/synced -->
 
   <project name="meta-openembedded" revision="730e44900a0a86265bad93a16b5a5ff344a07266"  remote="oe" path="source/meta-openembedded" upstream="kirkstone" />
-  <project name="meta-variscite-qemu" revision="f8b0a65701f2560d9526440aec0e259aa7b2047c" remote="prakash56755" path="source/meta-variscite-qemu" />
+  <project name="meta-variscite-qemu" revision="87715e9c03d35b892f5958b7210a1b57a32d21d7" remote="prakash56755" path="source/meta-variscite-qemu" />
   <project name="poky" revision="54af8c5e80ebf63707ef4e51cc9d374f716da603" remote="yocto" path="source/" upstream="kirkstone" />
 
 </manifest>
